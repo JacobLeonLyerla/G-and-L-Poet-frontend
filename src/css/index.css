@@ -1,0 +1,26 @@
+.fa-twitter {
+  font-size: 100px;
+  animation-duration: 4s;
+  /* animation-delay: 10s; */
+  margin-top: 100px;
+  color: cornflowerblue;
+  animation-iteration-count: 3;
+}
+.fa-twitter:hover {
+    animation:swing;
+    font-size: 100px;
+    animation-duration: 2s;
+    /* animation-delay: 10s; */
+    margin-top: 100px;
+    color: cornflowerblue;
+    animation-iteration-count: 1;
+  }
+  .fa-twitter:active {
+    animation:zoomOutDown;
+    font-size: 100px;
+    animation-duration: 1s;
+    /* animation-delay: 10s; */
+    margin-top: 100px;
+    color: cornflowerblue;
+    animation-iteration-count: 1;
+  }
