@@ -1,9 +1,64 @@
 //******************************** TESTING
-.fa-bowling-ball{
-    font-size: 100px;
-    animation-duration: 4s;
-    /* animation-delay: 10s; */
-   margin-top: 100px;
-   color: brown;
-   animation-iteration-count: 3;
+// .fa-twitter:hover {
+//     animation:swing;
+//     font-size: 100px;
+//     animation-duration: 2s;
+//     /* animation-delay: 10s; */
+//     margin-top: 100px;
+//     color: cornflowerblue;
+//     animation-iteration-count: 1;
+//   }
+// .fa-twitter:hover {
+//     animation:swing;
+//     font-size: 100px;
+//     animation-duration: 2s;
+//     /* animation-delay: 10s; */
+//     margin-top: 100px;
+//     color: plum;
+//     animation-iteration-count: 1;
+//   }
+//   .fa-twitter:active {
+//     animation:zoomOutDown;
+//     font-size: 100px;
+//     animation-duration: 1s;
+//     /* animation-delay: 10s; */
+//     margin-top: 100px;
+//     color: palevioletred;
+//     animation-iteration-count: 1;
+//   }
+//********************************************************GLOBAL
+.App{
+    min-height:100vh;
+    padding-bottom:40px;
+    background:@Primary-Color;
 }
+//***********************************************************NAV
+.navbar {
+  background: @Secondary-Color;
+
+  .fa-caret-square-down{
+      color:white;
+      @media @desktop{
+display:none
+}  
+    }
+  .navbar-brand {
+    color: white;
+  }
+  .nav-item {
+    color: white;
+
+}
+  
+}
+//**********************************************************POEMS
+.card{
+    margin:0 auto;
+    margin-top: 25px;
+    margin-bottom:20px;
+    width:70%;
+}
+//******************************************************VARIABLES
+@Primary-Color: #9b656f;
+@Secondary-Color: #e8a465;
+@desktop:  ~"(min-width: 768px)";

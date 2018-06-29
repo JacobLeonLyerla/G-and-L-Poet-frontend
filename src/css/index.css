@@ -1,26 +1,28 @@
-.fa-twitter {
-  font-size: 100px;
-  animation-duration: 4s;
-  /* animation-delay: 10s; */
-  margin-top: 100px;
-  color: cornflowerblue;
-  animation-iteration-count: 3;
+.App {
+  min-height: 100vh;
+  padding-bottom: 40px;
+  background: #9b656f;
 }
-.fa-twitter:hover {
-    animation:swing;
-    font-size: 100px;
-    animation-duration: 2s;
-    /* animation-delay: 10s; */
-    margin-top: 100px;
-    color: cornflowerblue;
-    animation-iteration-count: 1;
+.navbar {
+  background: #e8a465;
+}
+.navbar .fa-caret-square-down {
+  color: white;
+}
+@media (min-width: 768px) {
+  .navbar .fa-caret-square-down {
+    display: none;
   }
-  .fa-twitter:active {
-    animation:zoomOutDown;
-    font-size: 100px;
-    animation-duration: 1s;
-    /* animation-delay: 10s; */
-    margin-top: 100px;
-    color: cornflowerblue;
-    animation-iteration-count: 1;
-  }
+}
+.navbar .navbar-brand {
+  color: white;
+}
+.navbar .nav-item {
+  color: white;
+}
+.card {
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  width: 70%;
+}
