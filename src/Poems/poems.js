@@ -8,9 +8,24 @@ const Poems = () => {
     <div>
       <Card>
         <CardBody>
-          <CardTitle>Card title</CardTitle>
+          <CardTitle>Poem Name</CardTitle>
       
-          <CardText>Some quick Poems text to build on the card title and make up the bulk of the card's content.</CardText>
+          <CardText>random poem text fa la fa la random poem text fa la fa la
+          random poem text fa la fa la
+          random poem text fa la fa la
+          random poem text fa la fa la
+          random poem text fa la fa la
+          random poem text fa la fa la
+          random poem text fa la fa la
+          random poem text fa la fa la
+          random poem text fa la fa la
+          vrandom poem text fa la fa la
+          random poem text fa la fa la
+          random poem text fa la fa la
+          random poem text fa la fa la
+          random poem text fa la fa la
+          random poem text fa la fa la
+          random poem text fa la fa la </CardText>
   
         </CardBody>
       </Card>

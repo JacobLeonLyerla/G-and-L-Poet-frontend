@@ -1,5 +1,6 @@
 // import dependencies
 import React from 'react';
+import {Col} from 'reactstrap';
 // import components
 import Poems from './poems'
 
@@ -7,14 +8,17 @@ import Poems from './poems'
 const PoemComponents =()=>{
     
 let poems =[];
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 3; i++) {
 poems.push(<Poems key={i}/>)
 }
 
    return(
     
     //render components
-<div>{poems}</div>
+    <Col md="9">
+  {poems}
+    </Col>
+
 ) 
 }
 export default PoemComponents

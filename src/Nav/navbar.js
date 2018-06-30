@@ -26,8 +26,10 @@ export default class NavBar extends React.Component {
   }
   render() {
     return (
-      <div>
-        <Navbar expand="md">
+      <div className="nav-styles">
+      <i class="fas fa-book-open" />
+Poetié
+        {/* <Navbar expand="md">
           <NavbarBrand href="/">
             <i class="fas fa-book-open" />
           </NavbarBrand>
@@ -46,7 +48,7 @@ export default class NavBar extends React.Component {
               </NavItem>
             </Nav>
           </Collapse>
-        </Navbar>
+        </Navbar> */}
       </div>
     );
   }

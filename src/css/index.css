@@ -1,10 +1,10 @@
 .App {
   min-height: 100vh;
   padding-bottom: 40px;
-  background: #9b656f;
+  background: #FFC095;
 }
 .navbar {
-  background: #e8a465;
+  background: #EA6D56;
 }
 .navbar .fa-caret-square-down {
   color: white;
@@ -20,9 +20,76 @@
 .navbar .nav-item {
   color: white;
 }
+.fa-book-open {
+  font-size: 40px;
+  animation: bounceInLeft;
+  animation-duration: 3s;
+  /* animation-delay: 10s; */
+  animation-iteration-count: 1;
+}
+.nav-styles {
+  color: white;
+  width: 100%;
+  letter-spacing: 5px;
+  font-size: 50px;
+  background: #EA6D56;
+}
+.bubbles-styles {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  box-sizing: border-box;
+  margin: 30px;
+}
+.bubbles-styles .bubble-container {
+  text-align: center;
+  margin-top: 30px;
+  cursor: pointer;
+  width: 40%;
+  border-radius: 60px;
+  background: #EA6D56;
+  padding: 10px;
+  box-shadow: 6px 6px 30px #7e2110;
+  position: relative;
+}
+.bubbles-styles .bubble-container:hover {
+  background: #e44629;
+  box-shadow: 2px 2px 15px #7e2110;
+}
+.bubbles-styles .sort-icon::before {
+  content: "Sort";
+  background: white;
+  color: black;
+  bottom: 80%;
+  opacity: 0;
+  left: 20%;
+  width: 40px;
+  font-size: 13px;
+  border-radius: 20%;
+  position: absolute;
+  z-index: 1;
+}
+.bubbles-styles .sort-icon:hover {
+  opacity: 1;
+}
+.bubbles-styles .bubble-container:active {
+  animation: bounceIn;
+  animation-duration: 1s;
+  /* animation-delay: 10s; */
+  animation-iteration-count: 1;
+}
 .card {
   margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 20px;
   width: 70%;
+}
+.card .card-title {
+  font-size: 26px;
+}
+.card .card-text {
+  border-top: 3px solid #EA6D56;
+  margin: 0 auto;
+  max-width: 85%;
 }

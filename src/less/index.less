@@ -27,38 +27,115 @@
 //     animation-iteration-count: 1;
 //   }
 //********************************************************GLOBAL
-.App{
-    min-height:100vh;
-    padding-bottom:40px;
-    background:@Primary-Color;
+.App {
+  min-height: 100vh;
+  padding-bottom: 40px;
+  background: @Primary-Color;
+
 }
 //***********************************************************NAV
 .navbar {
   background: @Secondary-Color;
 
-  .fa-caret-square-down{
-      color:white;
-      @media @desktop{
-display:none
-}  
+  .fa-caret-square-down {
+    color: white;
+    @media @desktop {
+      display: none;
     }
+  }
   .navbar-brand {
     color: white;
   }
   .nav-item {
     color: white;
+  }
+}
+.fa-book-open{
+  font-size:40px;
+  animation:bounceInLeft;
+    animation-duration: 3s;
+    /* animation-delay: 10s; */
+    animation-iteration-count: 1;
+  }
+.nav-styles{
+  color:white;
+  width:100%;
+  letter-spacing:5px;
+  font-size:50px;
+  background:@Secondary-Color;
+}
+//********************************************************SIDEBAR
+.bubbles-styles{
+  color:white;
+  display:flex;
+  flex-direction: column;
+  font-size:20px;
+   box-sizing: border-box;
+  margin: 30px;
+
+  .bubble-container{
+    
+      text-align: center;
+      margin-top: 30px;
+      cursor: pointer;
+    width: 40%;
+    padding:10px;
+    border-radius: 60px;
+    background: @Secondary-Color;
+    padding: 10px;
+    box-shadow: 6px 6px 30px darken(@Secondary-Color,35%);
+    position: relative;
+  }
+  .bubble-container:hover{
+    background: darken(@Secondary-Color,10%);
+    box-shadow: 2px 2px 15px darken(@Secondary-Color,35%);
 
 }
+.sort-icon::before{
+  content:"Sort";
+  background:white;
+  color:black;
+  bottom:80%;
+  opacity: 0;
+  left:20%;
+  width:40px;
+  font-size:13px;
+  border-radius: 20%;
+  position: absolute;
+  z-index: 1;
   
 }
+.sort-icon:hover{
+opacity:1;
+}
+
+  .bubble-container:active{
+         animation:bounceIn;
+        animation-duration: 1s;
+        /* animation-delay: 10s; */
+        animation-iteration-count: 1;
+  
+  }
+}
+
 //**********************************************************POEMS
-.card{
-    margin:0 auto;
-    margin-top: 25px;
-    margin-bottom:20px;
-    width:70%;
+.card {
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  width: 70%;
+  .card-title{
+      font-size:26px;
+      
+  }
+  .card-text {
+border-top: 3px solid @Secondary-Color;
+    margin: 0 auto;
+    max-width: 85%;
+  }
 }
 //******************************************************VARIABLES
-@Primary-Color: #9b656f;
-@Secondary-Color: #e8a465;
-@desktop:  ~"(min-width: 768px)";
+@Primary-Color: #FFC095;
+@Secondary-Color: #EA6D56;
+@Third-Color: #F2946B;
+@desktop: ~"(min-width: 768px)";
