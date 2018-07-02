@@ -8,14 +8,14 @@ import Poems from './poems'
 const PoemComponents =()=>{
     
 let poems =[];
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 10; i++) {
 poems.push(<Poems key={i}/>)
 }
 
    return(
     
     //render components
-    <Col md="9">
+    <Col sm="9" md="9" lg="8">
   {poems}
     </Col>
 

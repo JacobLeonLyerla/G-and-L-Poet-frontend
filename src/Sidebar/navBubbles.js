@@ -6,8 +6,8 @@ import { Col } from "reactstrap";
 // set up statless component
 const Bubbles = () => {
   return (
-    <Col md="2" className="bubbles-styles sign-icon">
-      <div className="bubble-container">
+    <Col md="2"  className="bubbles-styles sign-icon">
+      <div className="bubble-container sign-in-icon">
         <i class="fas fa-sign-in-alt" />
       </div>
       <div className="bubble-container user-icon">
