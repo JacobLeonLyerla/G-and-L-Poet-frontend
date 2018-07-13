@@ -1,8 +1,9 @@
 .App {
   min-height: 100vh;
   padding-bottom: 40px;
+  background: #ffc095;
 }
-.row {
+.App .row {
   background: #ffc095;
 }
 .navbar {
@@ -89,6 +90,17 @@
   /* animation-delay: 10s; */
   animation-iteration-count: 1;
 }
+.modal-content {
+  padding: 20px;
+  height: 300px;
+}
+.modal-content .btn {
+  margin-top: 40px;
+  width: 100%;
+  align-self: center;
+  background: #ea6d56;
+  border: none;
+}
 .card {
   margin: 0 auto;
   margin-top: 25px;
@@ -102,4 +114,10 @@
   border-top: 3px solid #ea6d56;
   margin: 0 auto;
   max-width: 85%;
+}
+.username-styles {
+  border: 1px solid black;
+  margin: 30px;
+  background: white;
+  width: 30%;
 }

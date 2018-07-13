@@ -31,12 +31,14 @@
 
   min-height: 100vh;
   padding-bottom: 40px;
+  background:@Primary-Color;
 
-}
-//***********************************************************NAV
 .row {
   background:@Primary-Color;
 }
+}
+//***********************************************************NAV
+
 .navbar {
   background: @Secondary-Color;
   position: sticky;
@@ -138,7 +140,18 @@
     animation-iteration-count: 1;
   }
 }
-
+//**********************************************************BUBBLE MENU COMPONENTS
+.modal-content{
+  padding: 20px;
+  height:300px;
+.btn{
+  margin-top:40px;
+  width: 100%;
+  align-self: center;
+  background:@Secondary-Color;
+  border:none;
+}
+}
 //**********************************************************POEMS
 .card {
   margin: 0 auto;
@@ -153,6 +166,13 @@
     margin: 0 auto;
     max-width: 85%;
   }
+}
+//******************************************************PROFILE
+.username-styles{
+  border:1px solid black;
+  margin:30px;
+  background:white;
+  width: 30%;
 }
 //******************************************************VARIABLES
 @Primary-Color: #ffc095;

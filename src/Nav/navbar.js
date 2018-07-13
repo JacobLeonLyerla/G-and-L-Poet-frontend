@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -26,7 +27,8 @@ export default class NavBar extends React.Component {
   }
   render() {
     return (
-      <div className="nav-styles">
+      <Link to='/' style={{textDecoration:"none"}}>
+    <div to='/' className="nav-styles">
       <i class="fas fa-book-open" />
 Poetié
         {/* <Navbar expand="md">
@@ -50,6 +52,7 @@ Poetié
           </Collapse>
         </Navbar> */}
       </div>
+      </Link>
     );
   }
 }
